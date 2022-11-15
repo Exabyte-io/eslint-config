@@ -1,6 +1,6 @@
 {
     "name": "@exabyte-io/eslint-config-mat3ra",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Eslint configuration extension to be reused across all mat3ra projects.",
     "scripts": {
         "test": "npm run lint",
