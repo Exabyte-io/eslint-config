@@ -3,79 +3,38 @@
 
 # eslint-config-mat3ra
 
-eslint-config-mat3ra houses entity definitions for use in the Mat3ra platform.
+## How to use
 
+1. Install config with eslint and eslint plugins
 
-### Installation
-
-For usage within a javascript project:
-
-```bash
-npm install @exabyte-io/eslint-config-mat3ra
+```
+npm install --save-dev \
+  @exabyte-io/eslint-config-mat3ra@1.0.0 \
+  @babel/eslint-parser@7.16.3 \
+  @babel/plugin-proposal-class-properties@7.16.0 \
+  @babel/preset-env@7.16.4 \
+  @babel/preset-react@7.16.7 \
+  @babel/register@^7.16.0 \
+  @babel/runtime-corejs3@7.16.8 \
+  eslint@7.32.0 \
+  eslint-config-airbnb@19.0.2 \
+  eslint-config-prettier@8.3.0 \
+  eslint-import-resolver-exports@^1.0.0-beta.2 \
+  eslint-import-resolver-meteor@^0.4.0 \
+  eslint-import-resolver-node@^0.3.6 \
+  eslint-plugin-import@2.25.3 \
+  eslint-plugin-jsdoc@37.1.0 \
+  eslint-plugin-jsx-a11y@6.5.1 \
+  eslint-plugin-prettier@4.2.1 \
+  eslint-plugin-react@7.30.0 \
+  eslint-plugin-simple-import-sort@7.0.0
 ```
 
-For development:
 
-```bash
-git clone https://github.com/Exabyte-io/eslint-config-mat3ra.git
+2. Create own `.eslintrc.json`:
+
 ```
-
-
-### Contribution
-
-This repository is an [open-source](LICENSE.md) work-in-progress and we welcome contributions.
-
-We regularly deploy the latest code containing all accepted contributions online as part of the
-[Mat3ra.com](https://mat3ra.com) platform, so contributors will see their code in action there.
-
-See [ESSE](https://github.com/Exabyte-io/esse) for additional context regarding the data schemas used here.
-
-Useful commands for development:
-
-```bash
-# run linter without persistence
-npm run lint
-
-# run linter and save edits
-npm run lint:fix
-
-# compile the library
-npm run transpile
-
-# run tests
-npm run test
+{
+    "extends": "mat3ra"
+}
 ```
-
-## Using Linter
-
-Linter setup will prevent committing files that don't adhere to the code standard. It will
-attempt to fix what it can automatically prior to the commit in order to reduce diff noise. This can lead to "unexpected" behavior where a
-file that is staged for commit is not identical to the file that actually gets committed. This happens
-in the `lint-staged` directive of the `package.json` file (by using a `husky` pre-commit hook). For example,
-if you add extra whitespace to a file, stage it, and try to commit it, you will see the following:
-
-```bash
-➜  repo-js git:(feature/cool-feature) ✗ git commit -m "Awesome feature works great"
-✔ Preparing...
-✔ Running tasks...
-✖ Prevented an empty git commit!
-✔ Reverting to original state because of errors...
-✔ Cleaning up...
-
-  ⚠ lint-staged prevented an empty git commit.
-  Use the --allow-empty option to continue, or check your task configuration
-
-husky - pre-commit hook exited with code 1 (error)
-```
-
-The staged change may remain but will not have been committed. Then it will look like you still have a staged
-change to commit, but the pre-commit hook will not actually commit it for you, quite frustrating! Styling can
-be applied manually and fixed by running:
-
-```bash
-npm run lint:fix
-```
-
-In which case, you may need to then add the linter edits to your staging, which in the example above, puts the
-file back to identical with the base branch, resulting in no staged changes whatsoever.
-
