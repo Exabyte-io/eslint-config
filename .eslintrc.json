@@ -17,6 +17,8 @@
     "plugins": ["simple-import-sort", "jsdoc"],
     "rules": {
         "comma-dangle": ["error", "always-multiline"],
+        "object-curly-spacing": "error",
+        "no-trailing-spaces": "error",
         "array-element-newline": ["error", "consistent"],
         "no-plusplus": ["error", { "allowForLoopAfterthoughts":  true }],
         "one-var": ["error", { "uninitialized": "always", "initialized": "never" }],

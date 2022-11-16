@@ -18,6 +18,8 @@ module.exports = {
   rules: {
     'array-element-newline': ['error', 'consistent'],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'object-curly-spacing': 'error',
+    'no-trailing-spaces': 'error',
     'one-var': ['error', { uninitialized: 'always', initialized: 'never' }],
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'prefer-template': 'off',
