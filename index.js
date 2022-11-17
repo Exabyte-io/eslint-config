@@ -55,27 +55,5 @@ module.exports = {
                 ],
             },
         ],
-        indent: [
-            "error",
-            4,
-            {
-                SwitchCase: 1,
-                ignoredNodes: ["TemplateLiteral"],
-            },
-        ],
-        "comma-dangle": ["error", "always-multiline"],
-        quotes: [1, "double", "avoid-escape"],
-        "jsx-quotes": ["error", "prefer-double"],
-        "max-len": [
-            "error",
-            100,
-            4,
-            {
-                ignoreUrls: true,
-                ignoreComments: true,
-                ignoreTemplateLiterals: true,
-                ignoreStrings: true,
-            },
-        ],
     },
 };
