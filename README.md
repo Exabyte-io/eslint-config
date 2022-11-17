@@ -18,12 +18,14 @@ npm install --save-dev \
   @babel/runtime-corejs3@7.16.8 \
   eslint@7.32.0 \
   eslint-config-airbnb@19.0.2 \
+  eslint-config-prettier@8.5.0 \
   eslint-import-resolver-exports@^1.0.0-beta.2 \
   eslint-import-resolver-meteor@^0.4.0 \
   eslint-import-resolver-node@^0.3.6 \
   eslint-plugin-import@2.25.3 \
   eslint-plugin-jsdoc@37.1.0 \
   eslint-plugin-jsx-a11y@6.5.1 \
+  eslint-plugin-prettier@4.2.1 \
   eslint-plugin-react@7.30.0 \
   eslint-plugin-simple-import-sort@7.0.0
 ```
