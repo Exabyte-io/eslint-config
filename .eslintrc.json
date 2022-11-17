@@ -1,5 +1,5 @@
 {
-    "extends": ["airbnb", "eslint:recommended"],
+    "extends": ["airbnb", "prettier", "eslint:recommended"],
     "settings": {
         "import/resolver": {
             "node": {
@@ -14,8 +14,9 @@
         "node": true,
         "mocha": true
     },
-    "plugins": ["simple-import-sort", "jsdoc"],
+    "plugins": ["prettier", "simple-import-sort", "jsdoc"],
     "rules": {
+        "prettier/prettier": "error",
         "comma-dangle": ["error", "always-multiline"],
         "object-curly-spacing": "error",
         "no-trailing-spaces": "error",
