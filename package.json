@@ -1,5 +1,5 @@
 {
-    "name": "@exabyte-io/eslint-config-mat3ra",
+    "name": "@exabyte-io/eslint-config",
     "version": "1.0.0",
     "description": "Eslint configuration extension to be reused across all mat3ra projects.",
     "scripts": {
