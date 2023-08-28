@@ -14,7 +14,7 @@
         "node": true,
         "mocha": true
     },
-    "plugins": ["prettier", "simple-import-sort", "jsdoc"],
+    "plugins": ["prettier", "simple-import-sort", "jsdoc", "mui-path-imports"],
     "rules": {
         "prettier/prettier": "error",
         "comma-dangle": ["error", "always-multiline"],
