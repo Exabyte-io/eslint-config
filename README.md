@@ -16,6 +16,8 @@
     @babel/preset-react@7.16.7 \
     @babel/register@^7.16.0 \
     @babel/runtime-corejs3@7.16.8 \
+    @typescript-eslint/eslint-plugin@5.9.1 \
+    @typescript-eslint/parser@5.9.1 \
     eslint@7.32.0 \
     eslint-config-airbnb@19.0.2 \
     eslint-config-prettier@8.5.0 \
@@ -27,7 +29,8 @@
     eslint-plugin-jsx-a11y@6.5.1 \
     eslint-plugin-prettier@4.2.1 \
     eslint-plugin-react@7.30.0 \
-    eslint-plugin-simple-import-sort@7.0.0
+    eslint-plugin-simple-import-sort@7.0.0 \
+    eslint-plugin-mui-path-imports
   ```
 
 
