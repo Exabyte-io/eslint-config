@@ -14,7 +14,7 @@ module.exports = {
         node: true,
         mocha: true,
     },
-    plugins: ["simple-import-sort", "prettier", "jsdoc"],
+    plugins: ["simple-import-sort", "prettier", "jsdoc", "mui-path-imports"],
     rules: {
         "prettier/prettier": "error",
         "array-element-newline": ["error", "consistent"],
@@ -34,8 +34,14 @@ module.exports = {
         "arrow-body-style": "off",
         "import/prefer-default-export": "off",
         "import/no-named-as-default-member": "warn",
+        "import/no-unresolved": ["error"],
         "no-param-reassign": ["warn", { props: false }],
         "max-classes-per-file": "warn",
+        "react/jsx-filename-extension": "off",
+        "react/forbid-prop-types": "off",
+        "react/button-has-type": "off",
+        "react/function-component-definition": [2, { namedComponents: "function-declaration" }],
+        "mui-path-imports/mui-path-imports": "error",
         "simple-import-sort/imports": [
             "warn",
             {
@@ -56,4 +62,30 @@ module.exports = {
             },
         ],
     },
+    overrides: [
+        {
+            files: ["*.ts", "*.tsx"],
+            extends: [
+                "eslint:recommended",
+                "plugin:@typescript-eslint/eslint-recommended",
+                "plugin:@typescript-eslint/recommended",
+                "plugin:import/typescript",
+            ],
+            parser: "@typescript-eslint/parser",
+            rules: {
+                "@typescript-eslint/ban-ts-comment": "off",
+                "import/no-absolute-path": "off",
+                "import/extensions": "off",
+                "react/forbid-prop-types": "off",
+                "react/jsx-filename-extension": "off",
+                "react/require-default-props": "off",
+                "no-use-before-define": "off",
+                "no-shadow": "off",
+                "one-var": "off",
+                "max-classes-per-file": "off",
+                "@typescript-eslint/no-use-before-define": ["error"],
+            },
+            plugins: ["@typescript-eslint"],
+        },
+    ],
 };
