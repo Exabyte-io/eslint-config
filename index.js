@@ -35,6 +35,7 @@ module.exports = {
         "import/prefer-default-export": "off",
         "import/no-named-as-default-member": "warn",
         "import/no-unresolved": ["error"],
+        "import/extensions": "off",
         "no-param-reassign": ["warn", { props: false }],
         "max-classes-per-file": "warn",
         "react/jsx-filename-extension": "off",
