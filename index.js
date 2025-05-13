@@ -1,1 +1,1 @@
-module.exports = require("./eslint_config/base.json");
+module.exports = require("./eslint_config/base.js");

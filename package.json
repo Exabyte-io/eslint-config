@@ -16,12 +16,12 @@
     "main": "index.js",
     "exports": {
         ".": "./index.js",
-        "./json": "./eslint_config/json.json"
+        "./json": "./eslint_config/json.js"
     },
     "files": [
         "index.js",
-        "eslint_config/base.json",
-        "eslint_config/json.json",
+        "eslint_config/base.js",
+        "eslint_config/json.js",
         ".babelrc",
         ".prettierrc"
     ],
